@@ -1,0 +1,40 @@
+{
+  "name": "vue-google-maps",
+  "description": "Vue 3 - Simple Google Maps Demo",
+  "version": "0.1.0",
+  "author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "clean": "rimraf dist node_modules"
+  },
+  "dependencies": {
+    "core-js": "^3.11.1",
+    "vue": "^3.0.11",
+    "vue3-google-map": "0.7.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.12",
+    "@vue/cli-plugin-eslint": "~4.5.12",
+    "@vue/cli-service": "~4.5.12",
+    "@vue/compiler-sfc": "^3.0.11",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "lint-staged": "^10.5.4",
+    "rimraf": "^3.0.2"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "npm run lint"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
