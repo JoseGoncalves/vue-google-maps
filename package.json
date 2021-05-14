@@ -13,7 +13,7 @@
   "dependencies": {
     "core-js": "^3.11.1",
     "vue": "^3.0.11",
-    "vue3-google-map": "0.7.1"
+    "vue3-google-map": "^0.7.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.12",
