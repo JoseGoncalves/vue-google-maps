@@ -1,9 +1,9 @@
 {
   "name": "vue-google-maps",
-  "description": "Vue 3 - Simple Google Maps Demo",
   "version": "0.1.0",
-  "author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
   "private": true,
+  "description": "Vue 3 - Simple Google Maps Demo",
+  "author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,25 +16,27 @@
     "vue3-google-map": "^0.8.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.13",
-    "@vue/cli-plugin-eslint": "~4.5.13",
-    "@vue/cli-service": "~4.5.13",
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@vue/cli-plugin-babel": "~5.0.0-beta.2",
+    "@vue/cli-plugin-eslint": "~5.0.0-beta.2",
+    "@vue/cli-service": "~5.0.0-beta.2",
     "@vue/compiler-sfc": "^3.1.5",
-    "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.15.1",
     "lint-staged": "^10.5.4",
     "rimraf": "^3.0.2"
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,vue}": "npm run lint"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  }
 }
