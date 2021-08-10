@@ -16,5 +16,9 @@
 		"semi": ["warn", "always"],
 		"vue/html-indent": ["warn", "tab"],
 		"vue/max-attributes-per-line": "off"
+	},
+	"globals": {
+		"defineProps": "readonly",
+		"defineEmits": "readonly"
 	}
 }
