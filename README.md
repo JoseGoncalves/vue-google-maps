@@ -1,5 +1,7 @@
 # vue-google-maps
 
+A Vue 3 & Google Maps Integration Demo.
+
 ## Project setup
 ```
 npm install
