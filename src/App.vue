@@ -1,10 +1,23 @@
 <!--
- * Copyright (C) 2020-2021 INOV - Instituto de Engenharia de Sistemas e Computadores Inovação
+ * Copyright (C) 2020-2022 INOV - Instituto de Engenharia de Sistemas e Computadores Inovação
  * All rights reserved.
  -->
 
 <template>
-	<GoogleMap id="map" ref="mapRef" :api-key="map.key" :language="map.language" :region="map.region" :center="map.center" :zoom="map.zoom" :min-zoom="map.minZoom" :max-zoom="map.maxZoom" :street-view-control="map.streetViewControl" @zoom_changed="zoomChanged" @center_changed="centerChanged" />
+	<GoogleMap
+	  id="map"
+	  ref="mapRef"
+	  :api-key="map.key"
+	  :language="map.language"
+	  :region="map.region"
+	  :center="map.center"
+	  :zoom="map.zoom"
+	  :min-zoom="map.minZoom"
+	  :max-zoom="map.maxZoom"
+	  :street-view-control="map.streetViewControl"
+	  @zoom_changed="zoomChanged"
+	  @center_changed="centerChanged"
+	/>
 </template>
 
 <script setup>

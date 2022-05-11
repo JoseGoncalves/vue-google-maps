@@ -1,6 +1,7 @@
 {
 	"root": true,
-	"env": {
+	"env":
+	{
 		"node": true,
 		"vue/setup-compiler-macros": true
 	},
@@ -8,16 +9,18 @@
 		"plugin:vue/vue3-recommended",
 		"eslint:recommended"
 	],
-	"parserOptions": {
+	"parserOptions":
+	{
 		"parser": "@babel/eslint-parser"
 	},
-	"rules": {
+	"rules":
+	{
 		"indent": ["warn", "tab"],
+		"no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
 		"quotes": ["warn", "single"],
 		"semi": ["warn", "always"],
-		"vue/html-indent": ["warn", "tab"],
-		"vue/max-attributes-per-line": "off"
+		"vue/html-indent": ["off"]
 	},
-	"globals": {
-	}
+	"globals":
+	{}
 }
