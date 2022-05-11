@@ -25,7 +25,7 @@ import { ref } from 'vue';
 import { GoogleMap } from 'vue3-google-map';
 
 const map = {
-	key: '<Place_Google_Key_Here>',
+	key: '', // Place a Google API Key here
 	language: 'pt-PT',
 	region: 'PT',
 	center: {
