@@ -38,9 +38,11 @@ const map = {
 	streetViewControl: false
 };
 
+let gmap = null;
+
 const mapRef = ref(null);
 
-let gmap = null;
+console.log('[GMap] Setup');
 
 watch(() => mapRef.value?.ready, ready => {
 	if (ready) {
