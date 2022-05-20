@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { GoogleMap } from 'vue3-google-map';
 
 const map = {
@@ -40,13 +40,20 @@ const map = {
 
 const mapRef = ref(null);
 
+let gmap = null;
+
+watch(() => mapRef.value?.ready, ready => {
+	if (ready) {
+		gmap = mapRef.value.map;
+		console.log('[GMap] Version:', mapRef.value.api.version);
+	}
+});
+
 function zoomChanged() {
-	const gmap = mapRef.value.map;
 	console.log('Map: Zoom', gmap.getZoom());
 }
 
 function centerChanged() {
-	const gmap = mapRef.value.map;
 	const center = gmap.getCenter();
 	console.log('Map: Center: (', center.lat(), ',', center.lng(), ')');
 }
