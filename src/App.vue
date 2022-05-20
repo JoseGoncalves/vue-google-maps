@@ -50,12 +50,12 @@ watch(() => mapRef.value?.ready, ready => {
 });
 
 function zoomChanged() {
-	console.log('Map: Zoom', gmap.getZoom());
+	console.log('[GMap] Zoom:', gmap.getZoom());
 }
 
 function centerChanged() {
 	const center = gmap.getCenter();
-	console.log('Map: Center: (', center.lat(), ',', center.lng(), ')');
+	console.log('[GMap] Center: (', center.lat(), ',', center.lng(), ')');
 }
 </script>
 
