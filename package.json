@@ -13,7 +13,7 @@
   "dependencies": {
     "core-js": "~3.25.0",
     "vue": "^3.2.38",
-    "vue3-google-map": "^0.13.2"
+    "vue3-google-map": "^0.14.0"
   },
   "devDependencies": {
     "@babel/core": "~7.18.13",

@@ -8,6 +8,7 @@
 	  id="map"
 	  ref="mapRef"
 	  :api-key="map.key"
+	  :libraries="map.libraries"
 	  :language="map.language"
 	  :region="map.region"
 	  :center="map.center"
@@ -17,15 +18,18 @@
 	  :street-view-control="map.streetViewControl"
 	  @zoom_changed="zoomChanged"
 	  @center_changed="centerChanged"
-	/>
+	>
+		<HeatmapLayer :options="{ data: heatmapData }" />
+	</GoogleMap>
 </template>
 
 <script setup>
 import { ref, watch } from 'vue';
-import { GoogleMap } from 'vue3-google-map';
+import { GoogleMap, HeatmapLayer } from 'vue3-google-map';
 
 const map = {
 	key: '', // Place a Google API Key here
+	libraries: ['visualization'],
 	language: 'pt-PT',
 	region: 'PT',
 	center: {
@@ -37,6 +41,14 @@ const map = {
 	maxZoom: null,
 	streetViewControl: false
 };
+
+const heatmapData = [{
+	lat: 38.725282,
+	lng: -9.149996
+}, {
+	lat: 38.726282,
+	lng: -9.148996
+}];
 
 let gmap = null;
 
