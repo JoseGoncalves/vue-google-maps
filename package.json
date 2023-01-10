@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "core-js": "~3.25.0",
-    "vue": "^3.2.38",
-    "vue3-google-map": "^0.14.1"
+    "vue": "^3.2.45",
+    "vue3-google-map": "^0.15.0"
   },
   "devDependencies": {
     "@babel/core": "~7.18.13",
@@ -21,9 +21,9 @@
     "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
-    "eslint": "^8.23.0",
-    "eslint-plugin-vue": "^9.4.0",
-    "lint-staged": "^12.5.0",
+    "eslint": "^8.31.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "lint-staged": "^13.1.0",
     "rimraf": "^3.0.2"
   },
   "browserslist": [
