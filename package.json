@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "vue": "^3.3.4",
-    "vue3-google-map": "^0.15.0"
+    "vue3-google-map": "^0.17.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
