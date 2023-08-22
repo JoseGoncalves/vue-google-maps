@@ -1,6 +1,10 @@
 # vue-google-maps
 
-A Vue 3 & Google Maps Integration Demo.
+A Vue 3 & Google Maps integration demo using the [vue3-google-map](https://github.com/inocan-group/vue3-google-map) library.
+
+## Customize Configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 ```sh
@@ -22,10 +26,7 @@ npm run build
 npm run lint
 ```
 
-### Clean development and production folders
+### Clean Development and Production Folders
 ```sh
 npm run clean
 ```
-
-### Customize configuration
-See [Vite Configuration Reference](https://vitejs.dev/config/).
