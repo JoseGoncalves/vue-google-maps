@@ -13,14 +13,14 @@
     "clean": "rimraf dist node_modules"
   },
   "dependencies": {
-    "vue": "^3.4.27",
+    "vue": "^3.4.38",
     "vue3-google-map": "^0.20.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue": "^5.1.2",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.26.0",
-    "rimraf": "^5.0.7",
-    "vite": "^5.2.12"
+    "eslint-plugin-vue": "^9.27.0",
+    "rimraf": "^5.0.10",
+    "vite": "^5.4.1"
   }
 }
