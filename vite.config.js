@@ -9,6 +9,9 @@ export default defineConfig({
 		open: true,
 		port: 8080
 	},
+	preview: {
+		port: 8008
+	},
 	plugins: [vue()],
 	resolve: {
 		alias: {

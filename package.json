@@ -1,6 +1,6 @@
 {
   "name": "vue-google-maps",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Vue 3 - Simple Google Maps Demo",
   "author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
