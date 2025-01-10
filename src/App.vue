@@ -7,6 +7,8 @@
 import { useTemplateRef, watch } from 'vue';
 import { GoogleMap } from 'vue3-google-map';
 
+console.log('[GMap] Setup');
+
 const map = {
 	key: '', // Place a Google API Key here
 	language: 'pt-PT',
@@ -24,8 +26,6 @@ const map = {
 let gmap = null;
 
 const mapRef = useTemplateRef('map-ref');
-
-console.log('[GMap] Setup');
 
 watch(() => mapRef.value?.ready, ready => {
 	if (ready) {
