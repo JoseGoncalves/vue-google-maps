@@ -3,23 +3,6 @@
  * All rights reserved.
  -->
 
-<template>
-	<GoogleMap
-		id="map"
-		ref="map-ref"
-		:api-key="map.key"
-		:language="map.language"
-		:region="map.region"
-		:center="map.center"
-		:zoom="map.zoom"
-		:min-zoom="map.minZoom"
-		:max-zoom="map.maxZoom"
-		:street-view-control="map.streetViewControl"
-		@zoom_changed="zoomChanged"
-		@center_changed="centerChanged"
-	/>
-</template>
-
 <script setup>
 import { useTemplateRef, watch } from 'vue';
 import { GoogleMap } from 'vue3-google-map';
@@ -60,6 +43,23 @@ function centerChanged() {
 	console.log('[GMap] Center: (', center.lat(), ',', center.lng(), ')');
 }
 </script>
+
+<template>
+	<GoogleMap
+		id="map"
+		ref="map-ref"
+		:api-key="map.key"
+		:language="map.language"
+		:region="map.region"
+		:center="map.center"
+		:zoom="map.zoom"
+		:min-zoom="map.minZoom"
+		:max-zoom="map.maxZoom"
+		:street-view-control="map.streetViewControl"
+		@zoom_changed="zoomChanged"
+		@center_changed="centerChanged"
+	/>
+</template>
 
 <style>
 html,
