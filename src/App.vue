@@ -1,12 +1,12 @@
 <!--
- * Copyright (C) 2020-2023 INOV - Instituto de Engenharia de Sistemas e Computadores Inovação
+ * Copyright (C) 2020-2025 INOV - Instituto de Engenharia de Sistemas e Computadores Inovação
  * All rights reserved.
  -->
 
 <template>
 	<GoogleMap
 		id="map"
-		ref="mapRef"
+		ref="map-ref"
 		:api-key="map.key"
 		:language="map.language"
 		:region="map.region"
@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
+import { useTemplateRef, watch } from 'vue';
 import { GoogleMap } from 'vue3-google-map';
 
 const map = {
@@ -40,7 +40,7 @@ const map = {
 
 let gmap = null;
 
-const mapRef = ref(null);
+const mapRef = useTemplateRef('map-ref');
 
 console.log('[GMap] Setup');
 
