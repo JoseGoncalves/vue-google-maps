@@ -1,6 +1,7 @@
 {
   "name": "vue-google-maps",
   "version": "0.5.0",
+  "license": "MIT",
   "private": true,
   "description": "Vue 3 - Simple Google Maps Demo",
   "author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
