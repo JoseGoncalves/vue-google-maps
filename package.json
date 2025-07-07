@@ -1,28 +1,28 @@
 {
-  "name": "vue-google-maps",
-  "version": "0.5.0",
-  "license": "MIT",
-  "private": true,
-  "description": "Vue 3 - Simple Google Maps Demo",
-  "author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --fix",
-    "clean": "rimraf dist node_modules"
-  },
-  "dependencies": {
-    "vue": "^3.5.13",
-    "vue3-google-map": "^0.21.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "eslint": "^9.18.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "rimraf": "^5.0.10",
-    "vite": "^6.0.7"
-  }
+	"name": "vue-google-maps",
+	"version": "0.6.0",
+	"license": "MIT",
+	"private": true,
+	"description": "Vue 3 - Simple Google Maps Demo",
+	"author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint . --fix",
+		"clean": "rimraf dist node_modules"
+	},
+	"dependencies": {
+		"vue": "^3.5.17",
+		"vue3-google-map": "^0.23.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.30.1",
+		"@vitejs/plugin-vue": "^6.0.0",
+		"eslint": "^9.30.1",
+		"eslint-plugin-vue": "^10.3.0",
+		"rimraf": "^6.0.1",
+		"vite": "^7.0.2"
+	}
 }
