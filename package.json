@@ -18,12 +18,12 @@
 		"vue3-google-map": "^0.24.1"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.36.0",
+		"@eslint/js": "^9.37.0",
 		"@vitejs/plugin-vue": "^6.0.1",
-		"eslint": "^9.36.0",
+		"eslint": "^9.37.0",
 		"eslint-plugin-vue": "^10.5.0",
 		"globals": "^16.4.0",
 		"rimraf": "^6.0.1",
-		"vite": "^7.1.7"
+		"vite": "^7.1.9"
 	}
 }
