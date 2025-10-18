@@ -1,6 +1,6 @@
 {
 	"name": "vue-google-maps",
-	"version": "0.6.0",
+	"version": "0.7.0",
 	"license": "MIT",
 	"private": true,
 	"description": "Vue 3 - Simple Google Maps Demo",

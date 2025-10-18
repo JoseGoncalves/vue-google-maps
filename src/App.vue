@@ -10,7 +10,7 @@ import { GoogleMap } from 'vue3-google-map';
 console.log('[GMap] Setup');
 
 const map = {
-	key: '', // Place a Google API Key here
+	key: import.meta.env.VITE_GOOGLE_API_KEY, // Read Google API Key from environment
 	language: 'pt-PT',
 	region: 'PT',
 	center: {
