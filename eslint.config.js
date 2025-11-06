@@ -2,6 +2,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import js from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
+import skipFormatting from '@vue/eslint-config-prettier/skip-formatting';
 
 export default defineConfig([
 	{
@@ -12,6 +13,15 @@ export default defineConfig([
 	globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
 
 	{
+		files: ['*.{js,mjs}'],
+		languageOptions: {
+			globals: {
+				...globals.nodeBuiltin,
+			},
+		},
+	},
+	{
+		ignores: ['*.{js,mjs}'],
 		languageOptions: {
 			globals: {
 				...globals.browser,
@@ -21,13 +31,5 @@ export default defineConfig([
 
 	js.configs.recommended,
 	...pluginVue.configs['flat/recommended'],
-
-	{
-		rules: {
-			'indent': ['warn', 'tab'],
-			'vue/html-indent': ['warn', 'tab'],
-			'quotes': ['warn', 'single'],
-			'semi': ['warn', 'always']
-		}
-	}
+	skipFormatting,
 ]);

@@ -7,15 +7,15 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
 	server: {
 		open: true,
-		port: 8080
+		port: 8080,
 	},
 	preview: {
-		port: 8008
+		port: 8008,
 	},
 	plugins: [vue()],
 	resolve: {
 		alias: {
-			'@': fileURLToPath(new URL('./src', import.meta.url))
-		}
-	}
+			'@': fileURLToPath(new URL('./src', import.meta.url)),
+		},
+	},
 });

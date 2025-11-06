@@ -24,10 +24,22 @@ npm run dev
 npm run build
 ```
 
+### Preview the Production Build
+
+```sh
+npm run preview
+```
+
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
+```
+
+### Format with [Prettier](https://prettier.io/)
+
+```sh
+npm run format
 ```
 
 ### Clean Development and Production Folders

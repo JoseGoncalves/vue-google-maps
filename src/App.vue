@@ -15,24 +15,27 @@ const map = {
 	region: 'PT',
 	center: {
 		lat: 38.725282,
-		lng: -9.149996
+		lng: -9.149996,
 	},
 	zoom: 12,
 	minZoom: 2,
 	maxZoom: null,
-	streetViewControl: false
+	streetViewControl: false,
 };
 
 let gmap = null;
 
 const mapRef = useTemplateRef('map-ref');
 
-watch(() => mapRef.value?.ready, ready => {
-	if (ready) {
-		gmap = mapRef.value.map;
-		console.log('[GMap] Version:', mapRef.value.api.version);
-	}
-});
+watch(
+	() => mapRef.value?.ready,
+	(ready) => {
+		if (ready) {
+			gmap = mapRef.value.map;
+			console.log('[GMap] Version:', mapRef.value.api.version);
+		}
+	},
+);
 
 function zoomChanged() {
 	console.log('[GMap] Zoom:', gmap.getZoom());
