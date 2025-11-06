@@ -6,6 +6,9 @@
 	"description": "Vue 3 - Simple Google Maps Demo",
 	"author": "José Miguel Gonçalves <jose.goncalves@inov.pt>",
 	"type": "module",
+	"engines": {
+		"node": "^20.19.0 || >=22.12.0"
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
