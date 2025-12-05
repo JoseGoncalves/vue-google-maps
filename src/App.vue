@@ -10,11 +10,12 @@ import { useGoogleMapsLoader } from 'vue-google-maps-loader';
 
 console.log('[GMap] Setup');
 
-const center = {
-	lat: 39.8628,
-	lng: -4.0273,
-};
-const zoom = 7;
+let gmap = null;
+let mapCenter = { lat: 39.8628, lng: -4.0273 };
+let mapZoom = 7;
+
+const center = ref(mapCenter);
+const zoom = ref(mapZoom);
 const minZoom = 2;
 const streetViewControl = false;
 const fullscreenControl = false;
@@ -43,13 +44,27 @@ const { isAvailable, apiPromise } = useGoogleMapsLoader(
 
 const mapRef = useTemplateRef('map-ref');
 
+const onIdle = () => {
+	if (!gmap) return;
+
+	const c = gmap.getCenter();
+	mapCenter = { lat: c.lat(), lng: c.lng() };
+	console.log('[GMap] Center:', mapCenter);
+
+	mapZoom = gmap.getZoom();
+	console.log('[GMap] Zoom:', mapZoom);
+};
+
 watch(
 	() => mapRef.value?.ready,
 	(ready) => {
-		if (ready) {
-			console.log('[GMap] Version:', mapRef.value.api.version);
-			console.log('[GMap] API:', mapRef.value.api);
-		}
+		if (!ready) return;
+
+		console.log('[GMap] Version:', mapRef.value.api.version);
+		console.log('[GMap] API:', mapRef.value.api);
+
+		gmap = mapRef.value.map;
+		console.log('[GMap] Map:', gmap);
 	},
 );
 
@@ -57,6 +72,10 @@ watch(
 	isAvailable,
 	(available) => {
 		console.log('[GMap] Available:', available);
+		if (!available) {
+			center.value = mapCenter;
+			zoom.value = mapZoom;
+		}
 	},
 	{ immediate: true },
 );
@@ -73,6 +92,7 @@ watch(
 		:min-zoom
 		:street-view-control
 		:fullscreen-control
+		@idle="onIdle"
 	>
 		<CustomControl position="TOP_RIGHT">
 			<div class="language-selector">
