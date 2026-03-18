@@ -23,10 +23,10 @@
 		"vue3-google-map": "^0.27.1"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.4",
+		"@eslint/js": "^10.0.1",
 		"@vitejs/plugin-vue": "^6.0.5",
 		"@vue/eslint-config-prettier": "^10.2.0",
-		"eslint": "^9.39.4",
+		"eslint": "^10.0.3",
 		"eslint-plugin-vue": "^10.8.0",
 		"globals": "^17.4.0",
 		"prettier": "^3.8.1",
