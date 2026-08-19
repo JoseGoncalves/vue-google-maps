@@ -18,19 +18,19 @@
 		"clean": "rimraf dist node_modules"
 	},
 	"dependencies": {
-		"vue": "^3.5.30",
+		"vue": "^3.5.41",
 		"vue-google-maps-loader": "^2.1.5",
-		"vue3-google-map": "^0.27.1"
+		"vue3-google-map": "^0.27.2"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@vitejs/plugin-vue": "^6.0.5",
+		"@vitejs/plugin-vue": "^6.0.8",
 		"@vue/eslint-config-prettier": "^10.2.0",
-		"eslint": "^10.0.3",
-		"eslint-plugin-vue": "^10.8.0",
-		"globals": "^17.4.0",
-		"prettier": "^3.8.1",
+		"eslint": "^10.8.1",
+		"eslint-plugin-vue": "^10.10.0",
+		"globals": "^17.11.0",
+		"prettier": "^3.9.6",
 		"rimraf": "^6.1.3",
-		"vite": "^8.0.0"
+		"vite": "^8.2.1"
 	}
 }
