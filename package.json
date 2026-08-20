@@ -19,7 +19,7 @@
 	},
 	"dependencies": {
 		"vue": "^3.5.41",
-		"vue-google-maps-loader": "^2.1.5",
+		"vue-google-maps-loader": "^2.2.0",
 		"vue3-google-map": "^0.27.2"
 	},
 	"devDependencies": {
@@ -31,6 +31,6 @@
 		"globals": "^17.11.0",
 		"prettier": "^3.9.6",
 		"rimraf": "^6.1.3",
-		"vite": "^8.2.1"
+		"vite": "^8.2.2"
 	}
 }
